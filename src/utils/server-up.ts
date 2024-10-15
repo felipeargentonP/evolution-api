@@ -5,6 +5,9 @@ import * as https from 'https';
 
 import { configService, SslConf } from '../config/env.config';
 
+// Definir um alias de tipo para https.Server
+type HttpsServer = https.Server;
+
 export class ServerUP {
   static #app: Express;
 
